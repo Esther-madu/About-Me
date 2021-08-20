@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0px;
   font-family: "DM Sans", sans-serif;
-  
 }
 
 body {
@@ -11,7 +10,6 @@ body {
   height: 100vh;
   position: absolute;
   overflow-x: hidden;
-  
 }
 
 /**
@@ -114,51 +112,54 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  -webkit-filter: grayscale(100%); 
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.first-text{
+.first-text {
   margin-left: 50px;
   width: 350px;
   margin-bottom: 100px;
 }
-.first-text h1{
+.first-text h1 {
   font-style: work sans;
   font-weight: bold;
   font-size: 100px;
   margin-bottom: 30px;
-  letter-spacing:-0.02em;
+  letter-spacing: -0.02em;
 }
-.first-text h2{
+.first-text h2 {
   font-size: 20px;
-  letter-spacing:-0.02em
+  letter-spacing: -0.02em;
 }
-.first-text p{
+.first-text p {
   font-size: 15px;
   margin-top: 20px;
-  letter-spacing:-0.02em;
+  letter-spacing: -0.02em;
   line-height: 22px;
 }
 .res-circley {
   /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
   width: 100%;
   border-radius: 50%;
-  
-
-  /* (B) BACKGROUND COLOR */ 
-  background: #def133;
+  /* (B) BACKGROUND COLOR */
+  background: linear-gradient(to right, #ffffff 50%, #def133 50%);
   border: 1px solid #000;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 2s ease;
   /* (C) NECESSARY TO POSITION TEXT BLOCK */
   line-height: 0;
   position: relative;
- 
 }
- 
+.res-circley:hover {
+  background-position: left bottom;
+}
+
 /* (D) MATCH HEIGHT */
 .res-circley::after {
   content: "";
   display: block;
-  padding-bottom: 100%; 
+  padding-bottom: 100%;
 }
 
 .res-circler {
@@ -166,16 +167,21 @@ body {
   width: 100%;
   border-radius: 50%;
   margin-left: 10px;
- 
 
-  /* (B) BACKGROUND COLOR */ 
-  background: #e46612;
+  /* (B) BACKGROUND COLOR */
+  background: linear-gradient(to right, #ffffff 50%, #e46612 50%);
   border: 1px solid #000;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 2s ease;
   /* (C) NECESSARY TO POSITION TEXT BLOCK */
   line-height: 0;
   position: relative;
 }
- 
+.res-circler:hover {
+  background-position: left bottom;
+}
+
 /* (D) MATCH HEIGHT */
 .res-circler::after {
   content: "";
@@ -189,22 +195,27 @@ body {
   border-radius: 50%;
   margin-left: 5px;
 
-  /* (B) BACKGROUND COLOR */ 
-  background: #70a2f3;
- 
+  /* (B) BACKGROUND COLOR */
+  background: linear-gradient(to right, #ffffff 50%, #70a2f3 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 2s ease;
   border: 1px solid #000;
   /* (C) NECESSARY TO POSITION TEXT BLOCK */
   line-height: 0;
   position: relative;
 }
- 
+.res-circleb:hover {
+  background-position: left bottom;
+}
+
 /* (D) MATCH HEIGHT */
 .res-circleb::after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
- 
+
 /* (E) TEXT BLOCK */
 .circle-txt {
   /* (E1) CENTER TEXT IN CIRCLE */
@@ -212,17 +223,18 @@ body {
   bottom: 50%;
   width: 100%;
   text-align: center;
- 
+  text-decoration: none;
+  color: #000000;
   /* (E2) THE FONT - NOT REALLY IMPORTANT */
   font-family: arial, sans-serif;
   font-weight: bold;
 }
-.circles{
+.circles {
   display: flex;
   margin-top: 20px;
 }
 
-hr{
+hr {
   margin-left: 60px;
   text-align: center;
   width: 1200px;
@@ -234,7 +246,6 @@ hr{
 **/
 
 .footer--container {
- 
   mix-blend-mode: normal;
   padding: 5rem 0;
   display: flex;
@@ -265,11 +276,9 @@ hr{
   box-sizing: border-box;
 }
 
-
-
 .footer--link--items h2 {
   margin-bottom: 20px;
-  color:#000;
+  color: #000;
   font-style: normal;
   font-weight: bold;
   font-size: 14.708px;
@@ -277,7 +286,7 @@ hr{
 }
 
 .footer--link--items a {
-  color:#000;
+  color: #000;
   text-decoration: none;
   margin-bottom: 1.4rem;
   width: 190px;
@@ -286,6 +295,4 @@ hr{
   font-weight: normal;
   font-size: 14.708px;
   line-height: 14px;
- 
 }
-
